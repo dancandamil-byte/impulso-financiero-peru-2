@@ -9,5 +9,11 @@
     "NODE_ENV": "production",
     "GOOGLE_SPREADSHEET_ID": "@google_spreadsheet_id",
     "GOOGLE_CREDENTIALS": "@google_credentials"
-  }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/[[...slug]]"
+    }
+  ]
 }
