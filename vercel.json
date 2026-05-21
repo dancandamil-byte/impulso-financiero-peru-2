@@ -9,14 +9,17 @@
     "GOOGLE_SPREADSHEET_ID": "@google_spreadsheet_id",
     "GOOGLE_CREDENTIALS": "@google_credentials"
   },
+  "builds": [
+    {
+      "src": "dist/index.js",
+      "use": "@vercel/node",
+      "config": { "zeroConfig": true }
+    }
+  ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "dist/index.js"
-    },
-    {
       "src": "/(.*)",
-      "dest": "dist/index.js"
+      "dest": "/dist/index.js"
     }
   ]
 }
