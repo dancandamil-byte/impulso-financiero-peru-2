@@ -200,7 +200,11 @@ export default function Home() {
                 </div>
                 <div className="flex justify-between items-center pb-3 border-b border-border">
                   <span className="text-muted-foreground">Plazo</span>
-                  <span className="font-bold text-primary">Flexible</span>
+                  <span className="font-bold text-primary">Flexible (30 días)</span>
+                </div>
+                <div className="flex justify-between items-center pb-3 border-b border-border">
+                  <span className="text-muted-foreground">Frecuencia de pago</span>
+                  <span className="font-bold text-primary">Diario, Semanal</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Aprobación</span>
